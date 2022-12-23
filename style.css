@@ -1,0 +1,61 @@
+/* setting up box sizing to be border box */
+*, *::before, *::after {
+    box-sizing: border-box; /*makes it easier to size width, height*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    background-color: skyblue;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color:aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: lightblue;
+}
+
+.btn:hover {
+    border-color: red;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
